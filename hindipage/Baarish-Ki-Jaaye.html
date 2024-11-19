@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>
+            Mero Lagi
+        </title>
+        <link rel="icon" href="http://localhost/KeepYourBeat/images/logo.png" type="image/png">
+        <style>
+            .container { display:flex;}
+            .lyrics { color:rgb(82, 81, 81); font-size: 20px;}
+            .lyrics h2 { font-size:50px; color: black;}
+            audio:hover {transform: scale(1.1);filter: drop-shadow(2px 3px 3px #333);}
+            audio { height: 100px; width:500px; }
+            #more {display: none;}
+            img { border-radius: 8px;}
+            A
+              {text-decoration: none; color: black;}
+            img:hover{ box-shadow: 0px 2px 5px 2px palevioletred;
+            }
+        </style>
+
+    </head>
+    <body>   <center><h1 id="myHeader"><img src="http://localhost/KeepYourBeat/images/logo.png" height="85" width="85" > Keep Your Beat</h1></center>
+        <br>  
+        <div class="container">
+            <div>
+                &nbsp;&ensp;&nbsp;<img src="cobweb.png" height="400" width="400" >
+            </div>
+            <div class="lyrics">
+                <h2> &nbsp; Mero lagi </h2>
+               &ensp; Artists : Cobweb Nepal<br>
+               &ensp; Featured Artists :   <br>
+               &ensp; Album : Namaste<br>
+                &ensp; Relesed : 2009 
+               
+               <br> <br>
+               <audio controls="controls" id="player" > 
+                <div class="buttons">
+                <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-5x"></i>
+                </div></div>
+                &ensp;
+                <source src="Cobweb - Mero Lagi (Official Music Video) - Cobweb Official (youtube).mp3" type="audio/mpeg"> </audio>
+
+            </div>
+        </div><br>
+
+        <center><h2 style="margin-left: 60px;">LYRICS</h2></center><center><pre>
+            Hera mero ankhama
+            Tasbir timrai paune chau
+            Khoja timi afu bhitra
+            Sadhai malai nai paune chau
+            Anshu jharcha bhijauda mutu
+            Tyo anshu lai bujhne timi nai hau<span id="dots">...</span><span id="more">
+            Timima nai cha mera sara khushi
+            Timima nai cha mera sara sapana
+            (Mero lagi swargako artha
+            Matra timi timi nai hau) x2
+
+            Verse:1
+
+            Samaya sangai badlincha mausam
+            Tara timi nabadlinu
+            Dukhaye chu bhane tyo timro man
+            Maaf malai gari dinu
+            Harek jiwan jiunalai sath chahincha
+            Tyo sathi timi nai hau
+
+            Timima nai cha sara khushi
+            Timima nai cha mera sara sapana
+            (Mero lagi swargako artha
+            Matra timi timi nai hau) x2</span></pre><button onclick="myFunction()" id="myBtn" class="myBtn" style="margin-left: 60px;">Read More</button></center>
+            <br><hr>
+      <center><h2>YOU MAY ALSO LIKE</h2></center>
+      <center>
+        <table><tr>
+            <td><a href="Ek Tarfa.html" ><input type="image" src="cobweb.png"  width="150" height="150"/></a> &emsp;</td><td>
+            &emsp;<a href="kaise hua.html" ><input type="image" src="albatross1.png"  width="150" height="150"/></a> &emsp; </td>
+            </tr><tr>   
+            <td><center><a href="Ek Tarfa.html">Banda Kitab</a></center></td><td><center><a href="kaise hua.html">Khaseka tara</a></center></td><td><center></tr></table><br>
+    
+      <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+    </script><br>
+    <hr>
+    </body>  
+</html>

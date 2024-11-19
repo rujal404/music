@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title>
+            Khaseka Tara
+        </title>
+        <link rel="icon" href="http://localhost/KeepYourBeat/images/logo.png" type="image/png">
+        <style>
+            .container { display:flex;}
+            .lyrics { color:rgb(82, 81, 81); font-size: 20px;}
+            .lyrics h2 { font-size:50px; color: black;}
+            audio:hover {transform: scale(1.1);filter: drop-shadow(2px 3px 3px #333);}
+            audio { height: 100px; width:500px; }
+            #more {display: none;}
+            img { border-radius: 8px;}
+            A
+              {text-decoration: none; color: black;}
+            img:hover{ box-shadow: 0px 2px 5px 2px palevioletred;
+            }
+        </style>
+
+    </head>
+    <body> <center><h1 id="myHeader"><img src="http://localhost/KeepYourBeat/images/logo.png" height="85" width="85" > Keep Your Beat</h1></center>
+        <br>  
+        <div class="container">
+            <div>
+                &nbsp;&ensp;&nbsp;<img src="albatross1.png" height="400" width="400" >
+            </div>
+            <div class="lyrics">
+                <h2> &nbsp; Khaseka Tara </h2>
+               &ensp; Artists :  Albatross Nepla <br>
+               &ensp; Album :  Jo Jas Sanga Sambandhit Chha <br>
+               &ensp; Relesed : 2007
+               <br> <br>
+               <audio controls="controls" id="player" > 
+                <div class="buttons">
+                <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-5x"></i>
+                </div></div>
+                &ensp;
+                <source src="Khaseka Tara (Lyrics On Screen).mp3" type="audio/mpeg"> </audio>
+
+            </div>
+        </div><br>
+
+        <center><h2 style="margin-left: 60px;"> &nbsp;  LYRICS</h2></center><center><pre>
+            Timi bhanda dherai maya
+            Kasle garna sakcha ra
+            Timi jasto jhuto kasam
+            Kasle khana sakcha ra
+<span id="dots">...</span><span id="more">
+
+            Hera na
+            Na hera malai
+            
+            Jalau na malai
+            
+            Eklo nai chu ma aja
+            Eklai ramauna deu
+            Ekant ko shunyata ma
+            Aasu khasalna deu
+            
+            Jiwan ko yo goreto ma
+            Farki tyahi pugey
+            Jiwan yo k ho k ho
+            Nabujhi baulai rahe ma
+            
+            
+            Timi bina ma
+            Jalau na malai
+            
+            
+            Khaseka tara gandai
+            Timilai nai maagi basey
+            Khaseka tara gandai
+            Timilai nai maagi basey
+            Khaseka tara gandai
+            Timilai nai maagi basey
+            Raata biteko chaalai paina
+            
+            Aaja feri yaad ayo
+            Bhanna lai kohi chaina
+            Chaadera jana pani
+            Mann le yo mandaina
+            
+            Janu cha dherai tadha
+            Farki aune kahiley
+            Hriday ma chodi dinchu
+            Samhali rakhi deu na
+            
+            Timi bina ma
+            Jalau na malai
+            
+            Khaseka tara gandai
+            Timilai nai maagi basey
+            Khaseka tara gandai
+            Timilai nai maagi basey
+            Khaseka tara gandai
+            Timilai nai maagi basey
+            
+            Raata biteko chaalai paina
+            
+            
+            Khaseka tara gandai
+            Timilai nai maagi basey
+            Khaseka tara gandai
+            Timilai nai maagi basey
+            Khaseka tara gandai
+            Timilai nai maagi basey
+            
+            Raata biteko chaalai paina</span></pre><button onclick="myFunction()" id="myBtn" class="myBtn" style="margin-left: 60px;">Read More</button></center>
+            <br><hr>
+      <center><h2>YOU MAY ALSO LIKE</h2></center>
+     <center>
+        <table><tr>
+            <td><a href="Doob Gaye.html" ><input type="image" src="albatross1.png"  width="150" height="150"/></a> &emsp;</td><td>
+            &emsp;<a href="Baarish-Ki-Jaaye.html" ><input type="image" src="cobweb.png"  width="150" height="150"/></a> &emsp; </td><td>
+            &emsp;<a href="Is Qadar.html" ><input type="image" src="cobweb.png"  width="150" height="150"/></a></td><tr>   
+            <td><center><a href="naach meri rani.html">Timi bhane</a></center></td><td><center><a href="Baarish-Ki-Jaaye.html">Mero Lagi</a></center></td><td><center><a href="Is Qadar.html">Banda Kitab</a></center></td></tr></table><br>
+            
+            
+    
+      <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+    </script><br>
+    <hr>
+    </body>  
+</html>

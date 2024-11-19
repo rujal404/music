@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <title>
+            Albatross - Timi bhane
+        </title><link rel="icon" href="http://localhost/KeepYourBeat/images/logo.png" type="image/png">
+        <style>
+            .container { display:flex;}
+            .lyrics { color:rgb(82, 81, 81); font-size: 20px;}
+            .lyrics h2 { font-size:50px; color: black;}
+            audio:hover {transform: scale(1.1);filter: drop-shadow(2px 3px 3px #333);}
+            audio { height: 100px; width:500px; }
+            #more {display: none;}
+            img { border-radius: 8px;}
+            A
+              {text-decoration: none; color: black;}
+            img:hover{ box-shadow: 0px 2px 5px 2px palevioletred;
+            }
+        </style>
+
+    </head>
+    <body>   <center><h1 id="myHeader"><img src="http://localhost/KeepYourBeat/images/logo.png" height="85" width="85" > Keep Your Beat</h1></center>
+        <br>  
+        <div class="container">
+            <div>
+                &nbsp;&ensp;&nbsp;<img src="albatross1.png" height="400" width="400" >
+            </div>
+            <div class="lyrics">
+                <h2> &nbsp; Timi Bhane </h2>
+               &ensp; Artists : Albatross Nepal <br>
+               &ensp; Album : Jo Jas Sanga Sambandhit Chha<br>
+               &ensp; Relesed : 2007
+               <br> <br>
+               <audio controls="controls" id="player" > 
+                <div class="buttons">
+                <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-5x"></i>
+                </div></div>
+                &ensp;
+                <source src="Timi Bhane - Albatross.mp3" type="audio/mpeg"> </audio>
+
+            </div>
+        </div><br>
+
+        <center><h2 style="margin-left: 60px;"> &nbsp;  LYRICS</h2></center><center><pre>
+            Farki farki nahera malai
+            Farki farki nahera malai
+            Timi vane<span id="dots">...</span><span id="more">
+            
+            Aasu jhare ma puchi diula
+            Aakash ko tara sabai
+            Ma tipera lyaidiula
+            Timi vane
+            
+            Farkera aau timi gham bani
+            Baadal ko mathi ma
+            Timi lai parkhi basu la
+            Timi vane
+            
+            Lina aba kehi chaina
+            Maatra eutai bahana
+            Dina matra khoji rachu
+            Yehi nai mero chahana
+            Timi vane
+            
+            Parkhal ma basi aba sochi rahe
+            Sapana sara mera
+            Bilayeko chaalai paina
+            Timi vane
+            
+            Vidhma uuvi aba tolai rahe
+            Sansar ka sara sukha
+            Vulai aagi hide ma
+            Timi vane
+            
+            
+            Lina aba kehi chaina
+            
+            Maatra eutai bahana
+            Dina maatra khoji rachu
+            Yehi nai mero chahana
+            Timi vane
+            
+            
+            
+            Farki Farki nahera malai - 6
+            Timi vane...</span></pre><button onclick="myFunction()" id="myBtn" class="myBtn" style="margin-left: 60px;">Read More</button></center>
+            <br><hr>
+      <center><h2>YOU MAY ALSO LIKE</h2></center>
+     <center>
+        <table><tr>
+            <td><a href="Is Qadar.html" ><input type="image" src="albatross1.png"  width="150" height="150"/></a> &emsp;</td><td>
+            &emsp;<a href="ishq tera.html" ><input type="image" src="cobweb.png"  width="150" height="150"/></a> &emsp; </td><td>
+            &emsp;<a href="naach meri rani.html" ><input type="image" src="cobweb.png"  width="150" height="150"/></a></td><tr>   
+            <td><center><a href="Is Qadar.html">Khaseka tara</a></center></td><td><center><a href="ishq tera.html">Mero lagi</a></center></td><td><center><a href="naach meri rani.html">Banda Kitab</a></center></td></tr></table><br>
+    
+      <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+    </script><br>
+    <hr>
+    </body>  
+</html>
